@@ -4,7 +4,8 @@ import {
     FormLabel,  
     Input,  
     useToast,  
-    VStack } from '@chakra-ui/react'
+    VStack,
+    FormHelperText, Link } from '@chakra-ui/react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import supabase from '../../supabase'
@@ -78,6 +79,9 @@ export default function SignUpTab(){
                 placeholder='password' 
                 type='password' />
             </FormControl>
+            <FormHelperText textAlign="right">
+                <Link href="resetpassword">Forgot password?</Link>
+            </FormHelperText>
             <Button onClick={SignIn} bg='gray.300'>Sign In</Button>
         </VStack>
     )

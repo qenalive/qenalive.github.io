@@ -1,6 +1,7 @@
 import { Center, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import LoginTab from "./components/LoginTab";
 import SignUpTab from './components/SignUpTab'
+import ResetPassword from "./components/ResetPassword";
 
 export default function Home(){
 
@@ -15,6 +16,7 @@ export default function Home(){
                 <TabList>
                     <Tab>Login</Tab>
                     <Tab>Sign Up</Tab>
+                    <Tab>Reset Password</Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
@@ -22,6 +24,9 @@ export default function Home(){
                     </TabPanel>
                     <TabPanel>
                         <SignUpTab />
+                    </TabPanel>
+                    <TabPanel>
+                        <ResetPassword />
                     </TabPanel>
                 </TabPanels>
             </Tabs>
